@@ -5,6 +5,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 import Home from "./routes/home";
 import "./index.css";
+import ContactDetail from "./routes/contact-detail";
 
 const client = new ApolloClient({
   uri: import.meta.env.VITE_GRAPHQL_URL,
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/contact/:id",
+    element: <ContactDetail />,
   },
 ]);
 

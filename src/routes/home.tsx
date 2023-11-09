@@ -13,7 +13,7 @@ export default function Home() {
         {data?.contact.map((contact: ContactProps) => {
           return (
             <li key={contact?.id}>
-              <Link to={`/${contact?.id}`}>{contact?.first_name}</Link>
+              <Link to={`/contact/${contact?.id}`}>{contact?.first_name}</Link>
             </li>
           );
         })}
