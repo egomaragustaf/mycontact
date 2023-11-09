@@ -7,5 +7,6 @@ export type ContactProps = {
 
 export type Phones = {
   id: number;
-  number: number;
+  __typename: string;
+  number: string;
 };
